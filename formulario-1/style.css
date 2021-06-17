@@ -2,11 +2,30 @@ body{
     background-color: rgb(241, 241, 241);
 }
 
-.titulo{
-    background-color: rgb(10, 198, 223);
+.container-titulo{
+    background-color: #282a35;
     display: block;
     padding: 3px;
     border: 2px solid rgb(202, 202, 206);
-    color: rgb(47, 47, 48);
+    color: rgb(229, 229, 236);
     
+    
+}
+
+.mascote-go{
+    
+     position: absolute;
+     max-width: 50px;
+    
+}
+
+.container-mascote-2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-titulo{
+    display: flex;
+    align-items: center;
 }
