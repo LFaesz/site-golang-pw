@@ -45,3 +45,8 @@ body{
     align-items: flex-end;
 
 }
+
+.container-texto1{
+    display: flex;
+    justify-content: center;
+}
