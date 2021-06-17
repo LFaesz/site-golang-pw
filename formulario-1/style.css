@@ -9,13 +9,18 @@ body{
     background-color: rgb(241, 241, 241);
 }
 
+/* Header */
+
 .container-titulo{
     background-color: #282a35;
     display: block;
     padding: 10px;
     border: 2px solid rgb(202, 202, 206);
     color: rgb(229, 229, 236);
-    
+}
+
+.container-titulo h1{
+    margin-left: 200px;
 }
 
 .mascote-go{
@@ -40,11 +45,66 @@ body{
     justify-content: center;
 }
 
+/* Form */
+
+form{
+    margin-top: 80px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;   
+}
+
+form input, button, label{
+    margin: 10px;
+}
+
+form label{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+form input{
+    width: 250px;
+    height: 35px;
+
+    border-radius: 10px;
+    border: solid 2px #00AED8;
+
+    background-color: rgba(255, 255, 255, 0.719);
+
+    font-size: 20px;
+}
+
+form button{
+    width: 250px;
+    height: 35px;
+
+    border-radius: 10px;
+    border: solid 2px #00AED8;
+
+    background-color: rgba(255, 255, 255, 0.719);
+
+    font-size: 20px;
+}
+
+form button:hover{
+    background-color: #00AED8;
+    cursor: pointer;
+}
+
+.mascoteform{
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 40px;
+    margin-right: 200px;
+}
 
 /* Footer */
 
 .container-footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
