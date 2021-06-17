@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+.titulo{
+    background-color: rgb(10, 198, 223);
+    display: block;
+    padding: 3px;
+    border: 2px solid rgb(202, 202, 206);
+    color: rgb(47, 47, 48);
+    
+}
