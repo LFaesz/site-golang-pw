@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -11,10 +12,9 @@ body{
 .container-titulo{
     background-color: #282a35;
     display: block;
-    padding: 3px;
+    padding: 10px;
     border: 2px solid rgb(202, 202, 206);
     color: rgb(229, 229, 236);
-    
     
 }
 
@@ -35,7 +35,19 @@ body{
     align-items: center;
 }
 
+.container-texto1{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Footer */
+
 .container-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
     background-color: #282a35;
     display: block;
@@ -43,10 +55,9 @@ body{
     border: 2px solid rgb(202, 202, 206);
     color: rgb(229, 229, 236);
     align-items: flex-end;
-
+    text-align: center;
 }
 
-.container-texto1{
-    display: flex;
-    justify-content: center;
+footer p{
+    font-family: open sans;
 }
