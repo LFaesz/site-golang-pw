@@ -34,3 +34,14 @@ body{
     display: flex;
     align-items: center;
 }
+
+.container-footer{
+
+    background-color: #282a35;
+    display: block;
+    padding: 3px;
+    border: 2px solid rgb(202, 202, 206);
+    color: rgb(229, 229, 236);
+    align-items: flex-end;
+
+}
