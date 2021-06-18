@@ -77,27 +77,27 @@ li a{
 }
 
 .drop-menu ul li{
-    display: inline-block;
+    display: block;
     position: relative;
 }
 .drop-menu ul li ul a{
-    display: inline-block;
+    display: block;
     color: var(--cor-primaria);
     padding: 10px;
     transition: background .3s;
+    font-size: 18px;
 }
 .drop-menu ul li a:hover{
     background-color: var(--cor-hover);
 }
 
 /* Sub menu */
-.drop-menu ul ul{
+.drop-menu ul li ul{
     display: none;
     position: absolute;
-    width: 180px;
 }
 
-.drop-menu ul li:hover ul{
+.drop-menu ul li span:hover ul{
     display: block;
 }
 
