@@ -5,10 +5,10 @@
 
 ## A linguagem de programação criada pelo Google!
 
-Você sabe oque é **Golang ?** alguma vez já ouviu falar sobre ? **Não ?** 😱
+Você sabe o que é **Golang ?** alguma vez já ouviu falar sobre ? **Não ?** 😱
 
 Então espera, você precisa conhecer essa linguagem de programação que veio com tudo **!!!**
- Vamos nessa, que a gente te explica e te ajuda a entender sobre tudo, ainda temos uma parte especial para você ficar ligado nas curiosidades sobre a linguagem 😁 
+Vamos nessa, que a gente te explica e te ajuda a entender sobre tudo, ainda temos uma parte especial para você ficar ligado nas curiosidades sobre a linguagem 😁 
 
 E antes que eu me esqueça, você também deve ter feito a mesma pergunta, sobre o cara aí em cima 👆🏼 , ele é o nosso querido amigo **GOPHER**, isso mesmo, o mascote oficial do Go, legal né !
 
