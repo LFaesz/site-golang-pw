@@ -6,10 +6,9 @@
   <img src="/img/mascote-2.png">
 </p>
 
-<p align="center">
 
   ## A linguagem de programação criada pelo Google!
-</p>
+
 
 
 Você sabe o que é **Golang ?** alguma vez já ouviu falar sobre ? **Não ?** 😱
