@@ -29,6 +29,13 @@
     max-width: 70px;
 }
 
+.material-icons{
+    color: #fff;
+    font-size: 30px;
+}
+.material-icons:hover{
+    color: #00aed8;
+}
 /* Footer */
 
 .container-footer{

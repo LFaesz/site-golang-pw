@@ -85,6 +85,7 @@
 
 .container-titulo-h2{  
     margin-bottom: 70px;
+    display: flex; /* Para o icone */
 }
 
 a{
@@ -93,4 +94,9 @@ a{
 }
 a:hover{
     color: #00AED8;
+}
+
+.material-icons{
+    font-size: 40px;
+    padding-right: 5px;
 }
