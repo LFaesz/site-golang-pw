@@ -40,6 +40,10 @@ body{
     justify-content: center;
 }
 
+.mascote-go{
+    max-width: 70px;
+}
+
 /* Form */
 
 form{
