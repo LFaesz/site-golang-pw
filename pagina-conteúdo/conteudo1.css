@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+.container-titulo{
+    background-color: #282a35;
+    display: block;
+    padding: 10px;
+    border: 2px solid rgb(202, 202, 206);
+    color: rgb(229, 229, 236);
+    max-height: 70px;
+}
+
+.container-titulo h1{
+    margin-left: 200px;
+}
+
+.container-titulo{
+    display: flex;
+    align-items: center;
+}
+
+.mascote-go{
+    max-width: 70px;
+}
+
+/* Footer */
+
+.container-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #282a35;
+    display: block;
+    padding: 3px;
+    border: 2px solid rgb(202, 202, 206);
+    color: rgb(229, 229, 236);
+    align-items: flex-end;
+    text-align: center;
+}

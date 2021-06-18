@@ -23,11 +23,6 @@ body{
     margin-left: 200px;
 }
 
-.mascote-go{
-       
-     max-width: 70px;
-    
-}
 
 .container-mascote-2{
     display: flex;
@@ -53,6 +48,8 @@ form{
     display: flex;
     justify-content: center;
     text-align: center;   
+    
+
 }
 
 form input, button, label{
