@@ -1,7 +1,11 @@
 # site-golang-pw
 
 <h1>Bem vindo ao Go!</h1>
-<img src="/img/mascote-2.png">
+
+<p align="center">
+  <img src="/img/mascote-2.png">
+</p>
+
 
 ## A linguagem de programação criada pelo Google!
 
