@@ -86,3 +86,11 @@
 .container-titulo-h2{  
     margin-bottom: 70px;
 }
+
+a{
+    text-decoration: none;
+    color: #282a35;
+}
+a:hover{
+    color: #00AED8;
+}
