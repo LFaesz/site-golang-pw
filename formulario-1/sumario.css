@@ -56,8 +56,8 @@
     font-family: 'Roboto', sans-serif;
     margin-top: 70px;
     margin-bottom: 100px;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
     font-size: 25px;
     border-radius: 15px;
     border: solid #717175 3px;
@@ -70,9 +70,19 @@
 }
 
 .topicos{
+    margin-bottom: 150px;
     color: #282a35;
 }
 
 .mascote-topicos{
     max-width: 100px;
+}
+
+.h2{
+    justify-content: center;
+    align-items: center;
+}
+
+.container-titulo-h2{  
+    margin-bottom: 70px;
 }
