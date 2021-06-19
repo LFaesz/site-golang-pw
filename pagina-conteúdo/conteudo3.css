@@ -106,3 +106,27 @@ li a{
     width: 180px;
     display: block;
 }
+
+.texto1 {
+    background-color: #d1f6ff9f;
+    margin: 0 10% 5% 10%;
+    text-align: justify;
+    width: 70%;
+    border: 2px solid whitesmoke;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: var(--cor-hover) 10px 10px 30px;
+}
+
+.titulo-texto {
+    margin: 5% 10% 1% 10%;
+    text-align: justify;
+    width: 70%;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: var(--cor-hover) 1px 1px 5px;
+}
+
+.curiosidades {
+    margin-bottom: 20px;
+    }
