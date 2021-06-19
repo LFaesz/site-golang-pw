@@ -92,12 +92,12 @@ li a{
 }
 
 /* Sub menu */
-.drop-menu ul ul{
+.drop-menu ul li ul{
     display: none;
     position: absolute;
 }
 
-.drop-menu ul li:hover ul{
+.drop-menu ul li span:hover ul{
     display: block;
 }
 
@@ -105,6 +105,8 @@ li a{
     width: 180px;
     display: block;
 }
+
+/* Conteudo */
 
 .texto1 {
     background-color: #d1f6ff9f;
