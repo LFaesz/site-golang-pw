@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <title>GoLang</title>
+</head>
+<body>
+    <div class="container-mascote-2">
+        <img class="mascote-2" src="/img/mascote-2.png" alt="mascote-go">
+    </div>
+    <header>
+
+        <div class="container-titulo">
+                <nav class="drop-menu">
+                    <ul class="dropdown">
+                        <li class="dropitem">
+                            <span class="material-icons list">
+                            list
+                            <ul>
+                                <li><a href="/#cont1">O que é?</a></li>
+                                <li><a href="/#cont2">Como funciona</a></li>
+                                <li><a href="/#cont3">Curiosidades do Go</a></li>
+                            </ul>
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            <a href="/#sumario"><span class="material-icons">
+                home
+            </span></a>
+            <h1>
+                Como aprender: 
+            </h1>
+
+            <img class= "mascote-go" src="/img/logo golang.svg" alt="">
+            <div id="res">
+                
+           </div>
+       </div>
+
+    </header>
+
+    <main id="root">
+        
+    </main>
+
+    <footer class="container-footer">
+        <div>
+            <p>Time: Lethicia Asevedo, Bruno Duarte e Lucas Faes</p>
+            <p>&copy; 2021</p>
+        </div>
+    </footer>
+    <script src="index.js" type="module"></script>
+    <script>
+        function enviar(){
+            let user = document.getElementById('user').value;
+            let res = document.getElementById('res');
+            res.innerHTML = `Olá ${user}`;
+            window.location.href = "/#sumario";
+        }
+    </script>
+</body>
+</html>

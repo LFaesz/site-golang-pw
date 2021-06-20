@@ -5,7 +5,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: rgb(241, 241, 241);
+}
+
 /* Header */
+.container-mascote-2{
+    display: flex;
+    justify-content: center; 
+}
 
 .container-titulo{
     background-color: #282a35;
@@ -41,6 +49,11 @@
 }
 .material-icons:hover{
     color: #00aed8;
+}
+
+#res{
+    margin-left: 700px;
+    font-size: 20px;
 }
 /* Footer */
 
@@ -130,4 +143,134 @@ li a{
 
 .paragrafo {
     margin-bottom: 30px;
-    }
+}
+.curiosidades {
+    margin-bottom: 20px;
+}
+
+.container-titulo-h2 .material-icons{
+    color: #282a35;
+}
+
+.container-titulo-h2 .material-icons:hover{
+    color: #00AED8;
+}
+/* Form */
+
+.titulohome{
+    display: flex;
+    justify-content: center;
+}
+.formm{
+    margin-top: 80px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;   
+    
+
+}
+
+.formm input, button, label{
+    margin: 10px;
+}
+
+.formm label{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.formm input{
+    width: 250px;
+    height: 35px;
+
+    border-radius: 10px;
+    border: solid 2px #00AED8;
+
+    background-color: rgba(255, 255, 255, 0.719);
+
+    font-size: 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.formm button{
+    width: 250px;
+    height: 35px;
+
+    border-radius: 10px;
+    border: solid 2px #00AED8;
+
+    background-color: rgba(255, 255, 255, 0.719);
+
+    font-size: 20px;
+}
+
+.formm button:hover{
+    background-color: #00AED8;
+    cursor: pointer;
+}
+
+.mascoteform{
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 40px;
+    margin-right: 200px;
+}
+/*Sumário*/
+
+.container-sumario{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 45px;
+    margin-bottom: 70px;
+    width: 600px;
+    height: 400px;
+    font-size: 25px;
+    border-radius: 15px;
+    border: solid #717175 3px;
+    
+}
+
+.container-sumario-pai{
+    display: flex;
+    justify-content: center;
+}
+
+.topicos{
+    margin-bottom: 150px;
+    color: #282a35;
+}
+
+.mascote-topicos{
+    max-width: 100px;
+}
+
+.h2{
+    justify-content: center;
+    align-items: center;
+}
+
+.container-titulo-h2{  
+    margin-bottom: 70px;
+    display: flex; /* Para o icone */
+}
+
+a{
+    text-decoration: none;
+    color: #282a35;
+}
+li a:hover{
+    color: #00AED8;
+}
+
+.material-icons{
+    font-size: 40px;
+    padding-right: 5px;
+}
