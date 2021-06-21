@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,29 +15,37 @@
     <title>GoLang</title>
 </head>
 <body>
-    <div class="container-mascote-2">
+    <div class="container-mascote-2" id="maschome">
         <img class="mascote-2" src="/img/mascote-2.png" alt="mascote-go">
     </div>
     <header>
 
         <div class="container-titulo">
-                <nav class="drop-menu">
+            <div id="res2">
+                <!--  <nav class="drop-menu">
                     <ul class="dropdown">
                         <li class="dropitem">
                             <span class="material-icons list">
                             list
                             <ul>
-                                <li><a href="/#cont1">O que é?</a></li>
-                                <li><a href="/#cont2">Como funciona</a></li>
-                                <li><a href="/#cont3">Curiosidades do Go</a></li>
+                                <li><a onclick="cont1()">O que é?</a></li>
+                                <li><a onclick="cont2()">Como funciona</a></li>
+                                <li><a onclick="cont3()">Curiosidades do Go</a></li>
+                                <li><a onclick="sumario()">Tópicos</a></li>
                             </ul>
                             </span>
                         </li>
                     </ul>
-                </nav>
-            <a href="/#sumario"><span class="material-icons">
-                home
-            </span></a>
+                </nav>-->
+            </div>
+            <div id="res3"><!--
+            <a onclick="home()"><span class="material-icons-outlined">
+                arrow_back
+            </span></a>-->
+            </div>
+            <div id="espaco">
+                <div class="espaco"></div> 
+            </div>
             <h1>
                 Como aprender: 
             </h1>
@@ -50,9 +58,33 @@
 
     </header>
 
-    <main id="root">
-        
-    </main>
+    <div id="main">
+        <div class="container-texto1">
+            <h1 class="titulohome">SEJA BEM VINDO, PREENCHA O FORMULÁRIO E DIVIRTA-SE</DIVIRTA-SE></h1>
+            </div>
+    
+    
+    
+        <div class="formm">
+            <div class="form">
+                <div class="infonome">
+                    <label for="">Qual é o seu nome?</label>
+                </div>
+    
+                <input type="text" id="user" placeholder="Digite o seu nome" required>
+    
+                <div class="infoemail">
+                    <label for="">Informe o seu e-mail para receber novidades</label>
+                </div>
+    
+                <input type="email" placeholder="Digite seu e-mail">
+                
+                <div class="botao-form"></div>
+                    <button onclick="sumario()">Enviar Cadastro</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="container-footer">
         <div>
@@ -60,13 +92,246 @@
             <p>&copy; 2021</p>
         </div>
     </footer>
-    <script src="index.js" type="module"></script>
+
     <script>
-        function enviar(){
-            let user = document.getElementById('user').value;
-            let res = document.getElementById('res');
-            res.innerHTML = `Olá ${user}`;
-            window.location.href = "/#sumario";
+        var masc = document.getElementById('maschome')
+        var res = document.getElementById('res')
+        var main = document.getElementById('main')
+
+        function sumario(){
+            var user = document.getElementById('user').value
+            var userT = user.length
+            if(userT>=4){
+                res.innerHTML = `<h2>Olá, ${user}</h2>`
+                main.innerHTML =`
+                <div class="container-sumario-pai">
+
+            <div class="container-sumario">
+                <ul class="topicos">
+
+                    <div class="container-titulo-h2">
+                        <a onclick="home()"><span class="material-icons">
+                            arrow_back
+                            </span></a>
+                        <h2>Tópicos: </h2>
+                    </div>
+
+                    <li> 
+                        <a onclick="cont1()">Oque é GO ?</a>
+                    </li>
+                    <li>
+                        <a onclick="cont2()">Como funciona</a>
+                    </li>
+                    <li>
+                        <a onclick="cont3()">Curiosidades sobre a linguagem</a> 
+                    </li>
+
+                </ul>
+
+                <img class= "mascote-topicos"src="/img/mascote-golang.png" alt="">
+
+
+            </div>
+            </div>
+                `
+            var masc = document.getElementById('maschome')
+            masc.innerHTML = ``
+            var res2 = document.getElementById('res2')
+            var res3 = document.getElementById('res3')
+            res2.innerHTML = `
+            <nav class="drop-menu">
+                    <ul class="dropdown">
+                        <li class="dropitem">
+                            <span class="material-icons list">
+                            list
+                            <ul>
+                                <li><a onclick="cont1()"">O que é?</a></li>
+                                <li><a onclick="cont2()">Como funciona</a></li>
+                                <li><a onclick="cont3()">Curiosidades do Go</a></li>
+                                <li><a onclick="sumario2()">Tópicos</a></li>
+                            </ul>
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            `
+            res3.innerHTML = `
+            <a onclick="home()"><span class="material-icons">
+                home
+            </span></a>
+            `
+            var espaco = document.getElementById('espaco')
+            espaco.innerHTML = ``
+        }   
+        }
+
+        function home(){
+            res.innerHTML = ''
+            masc.innerHTML = `
+            <img class="mascote-2" src="/img/mascote-2.png" alt="mascote-go">
+            `
+            main.innerHTML = `
+            <div class="container-texto1">
+            <h1 class="titulohome">SEJA BEM VINDO, PREENCHA O FORMULÁRIO E DIVIRTA-SE</DIVIRTA-SE></h1>
+            </div>
+    
+    
+    
+        <div class="formm">
+            <div class="form">
+                <div class="infonome">
+                    <label for="">Qual é o seu nome?</label>
+                </div>
+    
+                <input type="text" id="user" placeholder="Digite o seu nome" required>
+    
+                <div class="infoemail">
+                    <label for="">Informe o seu e-mail para receber novidades</label>
+                </div>
+    
+                <input type="email" placeholder="Digite seu e-mail">
+                
+                <div class="botao-form"></div>
+                    <button onclick="sumario()">Enviar Cadastro</a></button>
+                </div>
+            </div>
+        </div>
+            `
+            var res2 = document.getElementById('res2')
+            var res3 = document.getElementById('res3')
+            res2.innerHTML = ``
+            res3.innerHTML = ``
+
+            var espaco = document.getElementById('espaco')
+            espaco.innerHTML = `
+            <div class="espaco"></div>
+            `
+        }
+
+        function cont1(){
+            masc.innerHTML = ``
+            main.innerHTML = `
+        <div class="titulo-texto">
+            <a href="#" onclick="sumario2()"><span class="material-icons">
+                arrow_back
+            </span></a>O que é GO?
+        </div>
+            <div class="texto1">
+                <div class="paragrafo">
+                <p>Golang (ou apenas Go) é uma linguagem de programação criada por funcionários do Google e foi lançada em código livre em novembro de 2009. Ela é uma linguagem compilada e com característica de programação concorrente. O projeto inicial da linguagem foi feito em setembro de 2007 por Robert Griesemer, Rob Pike e Ken Thompson.
+                A história conta que o trio que possuía mais de 30 anos de experiência com C, se encontrava descontente com as linguagens existentes e buscaram criar uma linguagem de programação que saciasse seus desejos. Acabou sendo considerada por muitos como a linguagem sucessora do C.
+                </p></div>
+                <div class="paragrafo">
+                <p>Usar “Golang” facilita a pesquisa relacionada a essa linguagem. Boa parte dos artigos no medium e respostas no Stackoverflow usa essa nomenclatura informal para evitar ambiguidade na indexação em sites de busca já que Go é uma palavra em inglês de uso comum ao contrário de Python e Javascript. 
+                </p></div>
+                <div class="paragrafo">
+                <p>Além de Golang, a linguagem do Google, também existe o Flutter, o framework do Google.
+                Principalmente, para ter uma opção de linguagem de alto desempenho além do C que representa limitações que não são compatíveis com necessidades mais modernas como:
+                Concorrência e evitar uso de gerenciamento de memória em código, por exemplo.
+                E, para resolver a situação de forma elegante e com bom desempenho, desenvolveram uma linguagem compilada com características de uma linguagem interpretada e suporte simplificado a concorrência.
+            </p></div>
+        </div>
+            `
+        }
+
+        function cont2(){
+            masc.innerHTML = ``
+            main.innerHTML = `
+            <div class="titulo-texto">
+            <a href="#" onclick="sumario2()"><span class="material-icons">
+                arrow_back
+            </span></a>Como funciona?
+        </div>
+        <div class="texto1">
+            <div class="paragrafo">
+            <p>Uma linguagem compilada é uma linguagem que após o programador ter finalizado seu código, ele tem que rodar um programa chamado compilador.
+                Este programa além de fazer uma análise sintática procurando por erros na maneira de escrever o código, ele também realiza uma análise semântica, buscando por erros na lógica da construção do código.
+                Se houver erros de algum desses tipos, o código não é compilado, isso evita, por exemplo, que esses erros sejam descobertos quando o código estiver em execução (em produção).
+                Outra vantagem do código compilado é que depois desse processo de compilação, o compilador cria um binário executável com código de máquina, que tende a ser mais rápido que outras linguagens interpretadas.
+                </p></div>
+            <div class="paragrafo">
+            <p>Estaticamente tipada significa que para cada tipo de váriável que o programador for usar (int, float, string), ele deve tipar, ou seja, declarar de qual tipo é aquela variável que somente aceitará dados desse tipo.
+                Isso evita erros comuns em outras linguagens quando um função recebe um dado de um tipo que não é esperado.
+                </p></div>
+            <div class="paragrafo">
+            <p>É relativamente fácil produzir código para outras arquiteturas e sistemas operacionais.
+                Com poucos comandos no meu notebook, eu produzo um binário executável para uma Raspberry Pi que possuo para fazer testes.
+                Também é possível produzir binários para Windows ou Mac de maneira similar.
+                Os executáveis podem ser compilados de maneira estática.
+                Isso significa que todas as bibliotecas que aquele binário utilizar estarão dentro desse binário, dispensando assim a instalação de qualquer outro software na máquina que irá executar aquele programa.
+                Go foi pensado e arquitetado com concorrência e paralelismo em mente.
+                Ela já vem de “fábrica” com goroutines, como são chamadas as chamadas de execução em paralelo da linguagem e também com channels, canais de comunicação entre partes diferentes do seu código trazendo com isso maneiras fáceis de produzir códigos assíncronos.
+                A biblioteca padrão da linguagem é bastante completa e vem de fábrica com muitas ferramentas bem úteis para qualquer programador backend entre elas, bibliotecas criptográficas e servidores de http.
+                Além disso ainda oferece testes unitários sem precisar de ferramentas externas.
+                Só é preciso criar um arquivo com o mesmo nome e adicionar _test ao final para testar um arquivo.
+                </p></div>
+        </div>
+            `
+        }
+
+        function cont3(){
+            masc.innerHTML = ``
+            main.innerHTML = `
+            <div class="titulo-texto">
+            <a href="#" onclick="sumario2()"><span class="material-icons">
+                arrow_back
+            </span></a>Curiosidades do GO
+        </div>
+    <div class="texto1">
+        <ol>
+            <li class="curiosidades"> Toda documentação é acessível pela linha de comando:
+            Isso é possível graças ao GoDoc, um projeto criado pelos desenvolvedores e mantenedores da linguagem, onde tem toda a documentação de Go e dos pacotes mais populares.
+            Você consegue acessá-lo pelo terminal, instalando a aplicação ou até mesmo acessar por HTTP para gerar o plain text de todos os dados ou realizar um query sobre ele.
+            </li>
+            <li class="curiosidades"> Nested structs:
+                Nested structs são estrutura(s) escritas dentro de outra estrutura.</li>
+            <li class="curiosidades"> Go get suporta custom domains:
+                Sim! Nas versões anteriores você podia rodar um go remote help para verificar isso. Com a versão atual já é algo natural.
+            </li>
+            <li class="curiosidades"> Enviar e receber em uma mesma channel:
+                Em Go, você consegue enviar uma estrutura channel de um contexto para outro sem precisar mudar ou aplicar o escopo da estrutura como global.
+            </li>
+            <li class="curiosidades"> Mock do sistema de arquivos:
+                Seu pacote usa e trabalha com sistema de arquivos, porém você não quer que seus testes usem o disco. É possível ”mockar” esses arquivos criando uma interface. Se preferir, também é possível realizar testes usando fixtures.
+                Se perdeu no significado de Mock? Objetos Mock são objetos que simulam o comportamento de objetos reais de forma controlada. São normalmente criados para testar o comportamento de outros objetos.
+            </li>
+        </ol>
+            `
+        }
+
+        function sumario2(){
+            var main = document.getElementById('main')
+            main.innerHTML =`
+                <div class="container-sumario-pai">
+
+            <div class="container-sumario">
+                <ul class="topicos">
+
+                    <div class="container-titulo-h2">
+                        <a onclick="home()"><span class="material-icons">
+                            arrow_back
+                            </span></a>
+                        <h2>Tópicos: </h2>
+                    </div>
+
+                    <li> 
+                        <a onclick="cont1()">Oque é GO ?</a>
+                    </li>
+                    <li>
+                        <a onclick="cont2()">Como funciona</a>
+                    </li>
+                    <li>
+                        <a onclick="cont3()">Curiosidades sobre a linguagem</a> 
+                    </li>
+
+                </ul>
+
+                <img class= "mascote-topicos"src="/img/mascote-golang.png" alt="">
+
+
+            </div>
+            </div>
+                `
         }
     </script>
 </body>

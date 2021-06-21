@@ -5,6 +5,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a{
+    cursor: pointer;
+}
+.espaco{
+    margin-right: 300px;
+}
 body{
     background-color: rgb(241, 241, 241);
 }
@@ -273,4 +279,9 @@ li a:hover{
 .material-icons{
     font-size: 40px;
     padding-right: 5px;
+}
+
+.titulo-texto span{
+    color: #000;
+    cursor: pointer;
 }
