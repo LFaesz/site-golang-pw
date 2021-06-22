@@ -272,6 +272,9 @@ a{
     text-decoration: none;
     color: #282a35;
 }
+
+/* icones */
+
 li a:hover{
     color: #00AED8;
 }
@@ -284,4 +287,10 @@ li a:hover{
 .titulo-texto span{
     color: #000;
     cursor: pointer;
+}
+
+/* msg erro */
+
+.msgerro{
+    color: rgb(255, 0, 0);
 }

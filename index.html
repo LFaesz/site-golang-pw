@@ -67,6 +67,7 @@
     
         <div class="formm">
             <div class="form">
+                <div id="erro"></div>
                 <div class="infonome">
                     <label for="">Qual é o seu nome?</label>
                 </div>
@@ -97,10 +98,10 @@
         var masc = document.getElementById('maschome')
         var res = document.getElementById('res')
         var main = document.getElementById('main')
-
         function sumario(){
             var user = document.getElementById('user').value
             var userT = user.length
+            var msgerro = document.getElementById('erro')
             if(userT>=4){
                 res.innerHTML = `<h2>Olá, ${user}</h2>`
                 main.innerHTML =`
@@ -162,6 +163,10 @@
             `
             var espaco = document.getElementById('espaco')
             espaco.innerHTML = ``
+        }else{
+            msgerro.innerHTML = `
+                <p class="msgerro">Erro, insira um nome com pelo menos 4 caracteres!</p>
+            `
         }   
         }
 
@@ -179,10 +184,10 @@
     
         <div class="formm">
             <div class="form">
+                <div id="erro"></div>
                 <div class="infonome">
                     <label for="">Qual é o seu nome?</label>
-                </div>
-    
+                </div>  
                 <input type="text" id="user" placeholder="Digite o seu nome" required>
     
                 <div class="infoemail">
